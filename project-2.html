@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best online Food delivery Services</title>
+    <link href="./project-2.css" rel="stylesheet" />
+    <style>
+    @media  screen and (max-width:1050px){
+        #navbar{
+            flex-direction: column;
+            height: 130px;
+        }
+        #services{
+            flex-direction: column;
+            flex-wrap: wrap;
+            margin: 0 auto;
+        }
+    }
+    @media  screen and (max-width:768px)and(min-width:670){
+        #home{
+            height: 370px;
+            flex-direction: column;
+        }
+        #home::before{
+            height: 480px;
+        }
+        #home p{
+            font-size: 13px;
+        }
+
+    }
+    @media  screen and (max-width:660px){
+        #home{
+            padding: 5px 40px;
+            height: 320px;
+            flex-direction: column;
+        }
+        #home::before{
+            height: 450px;
+        }
+        #home p{
+            font-size: 20px;
+            height: 550px;
+            /* width: 200px; */
+        }
+        #home .h-primary{
+            height: 200px;
+            font-size: 30px;
+            /* width: 250px; */
+        }
+        #navbar ul li a{
+            margin:0px 7px;
+            font-size: 1.12rem;
+        }
+        #navbar ul li a:hover{
+            background-color: black;
+            color: white;
+        }
+        .btn{
+            margin: 20px;
+        }
+        #clients{
+            flex-wrap: wrap;
+        }
+        #clients img{
+            width: 60px;
+            height: autoS;
+        }
+        .contact-box form{
+            width: 250px;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="images/logo.png" alt="Food delivery services" />
+        </div>
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#services">Services</a></li>
+            <li class="item"><a href="#clients">About Us</a></li>
+            <li class="item"><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="h-primary">Welcome To My Online Food Meal</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non explicabo id aliquid autem,
+            nobis eum? Excepturi dicta sequi suscipit non est neque debitis!
+            Dolorem tenetur recusandae deserunt praesentium neque in?</p>
+        <button class="btn">Order Now</button>
+    </section>
+    <section class="services-container">
+        <h1 class="h-primary">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="images/pizza.webp" alt="pizza">
+                <h2 class="h-secondary center">Ordering Food</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Repellat asperiores neque eligendi, nihil consequatur commodi porro quasi sit tempore nostrum quis
+                    impedit saepe,
+                </p>
+            </div>
+            <div class="box">
+                <img src="images/burger.jpg" alt="burger">
+                <h2 class="h-secondary center">Ordering Food</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Repellat asperiores neque eligendi, nihil consequatur commodi porro quasi sit tempore nostrum quis
+                    impedit saepe,
+                </p>
+            </div>
+            <div class="box">
+                <img src="images/popcorn.webp" alt="popcorn">
+                <h2 class="h-secondary center">Ordering Food</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Repellat asperiores neque eligendi, nihil consequatur commodi porro quasi sit tempore nostrum quis
+                    impedit saepe,
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="client-section">
+        <h1 class="h-primary center">Our Clients</h1>
+        <div id="clients">
+            <div class="client-item">
+                <img src="images/zenwalk-logo.png">
+            </div>
+            <div class="client-item">
+                <img src="images/ms-logo.webp">
+            </div>
+            <div class="client-item">
+                <img src="images/yahho-logo.webp">
+            </div>
+            <div class="client-item">
+                <img src="images/you-tube-logo.png">
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1 class="h-primary" center>Contact Us</h1>
+        <div class="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="tex" name="name" id="name" placeholder="Enter your name" />
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your Email" />
+                </div>
+                <div class="form-group">
+                    <label for="numbar">Phone Number</label>
+                    <input type="number" name="Phone Number" id="number" placeholder="Enter your Number" />
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" cols="25" rows="4"></textarea>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="center">
+            copyright &copy; www.myonlinemeal.com All Rights reserved
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,229 @@
+/* CSS reset  */
+* {
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+#navbar {
+    font-family: 'Playfair Display', serif;
+    position:sticky;
+    display:flex;
+    align-items: center;
+    height: 50px;
+    top: 0;
+}
+
+#navbar::before {
+    content: '';
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#logo {
+    margin: 10px 20px;
+}
+
+#logo img {
+    margin: 8px 16px;
+    height: 50px;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.45rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 10px;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+/* home section */
+#home {
+    display: flex;
+    flex-direction: column;
+    height: 380px;
+    padding: 3px 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+#home h1 {
+    color: white;
+    font-size: 1.9rem;
+    text-align: center;
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 0.7rem;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+#home::before {
+    content: '';
+    position: absolute;
+    background: url(images/food.jpg) no-repeat center center/cover;
+    height: 65%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.btn {
+    font-size: 1.2rem;
+    width: 120px;
+    padding: 2px;
+    margin: 15px;
+    border: 2px solid black;
+    border-radius: 60px;
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: green;
+    color: white;
+}
+
+/* h2-secondary */
+.h-primary {
+    text-align: center;
+    font-size: 1.9rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.h-secondary {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 21px;
+    padding: 5px;
+}
+
+#services {
+    margin:50px 10px;
+    display: flex;
+}
+
+#services .box {
+    padding: 20px;
+    margin: 3px 25px;
+    border-radius: 23px;
+    background-color: aliceblue;
+    border: 2px solid gray;
+}
+
+#services .box img {
+    border: 2px solid gray;
+    height: 140px;
+    display: block;
+    margin: auto;
+}
+
+#services .box p {
+    text-align: center;
+    font-size: 14px;
+}
+
+#client-section {
+    height: 200px;
+}
+
+#client-section::before {
+    content: '';
+    position: absolute;
+    height: 30%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    background-image: url(images/background.jpg);
+}
+
+#clients {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.client-item {
+    padding: 10px;
+}
+
+#clients img {
+    height: 80px;
+    width: 130px;
+
+}
+
+#contact {
+    position: relative;
+    /* bottom: 142px; */
+    height: 300px;
+    width: 100%;
+}
+
+.contact-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 34px;
+}
+
+#contact::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(images/call.jpg) no-repeat center center/cover;
+}
+
+footer {
+    position: relative;
+    text-align: center;
+    /* bottom: 142px; */
+    background-color: black;
+    color: white;
+    padding: 8px 20px;
+    opacity: 0.8;
+}
+.contact-box input,
+.contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    background-color:whitesmoke;
+}
+.contact-box form{
+    width: 35%;
+}
+.contact-box input:hover,textarea:hover{
+    transform: scale(1.01);
+    background-color: lightgray;
+}
